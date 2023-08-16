@@ -6,22 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
     <div id="header">
         <div class="container">
 
-         <img src="portfolio.png" class="logo">
+         <img data-aos="zoom-in-right" src="portfolio.png" class="logo">
             <nav>
                 <ul>
                     <li><a href="https://mail.google.com/mail/u/0/?pli=1#inbox?compose=CllgCJvkXqxbkhhgDRwCVdkrbPPbGhDngGTGtXzfRQhKpRVjqCKTStbCMpqvmNPlHjqpKdMBffg" target="_blank">@JDM.</a></li>
                 </ul>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About me</a></li>
-                    <li><a href="#">Experiences</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#abouts">About me</a></li>
+                    <li><a href="#experience">Experiences</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
                 <img src="moon.png" id="icon">
             </nav>
@@ -31,24 +33,26 @@
             </div>
         </div>
     </div>
+    <div class="iconsss">
     <a class="facebook-icon" href="https://www.facebook.com/JuanitoAfonso" target="_blank">
-        <ion-icon name="logo-facebook"></ion-icon>
+        <ion-icon name="logo-facebook"> </ion-icon>
     </a>
 
     <a class="discord-icon" href="https://discord.gg/JdS7stFd" target="_blank">
-        <ion-icon name="logo-discord"></ion-icon>
+        <ion-icon name="logo-discord"> </ion-icon>
     </a>
 
     <a class="github-icon" href="https://github.com/AgentSamegaki" target="_blank">
-        <ion-icon name="logo-github"></ion-icon>
+        <ion-icon name="logo-github"> </ion-icon>
     </a>
     <a class="gitlab-icon" href="https://gitlab.com/Samegaki" target="_blank">
-        <ion-icon name="logo-gitlab"></ion-icon>
+        <ion-icon name="logo-gitlab"> </ion-icon>
     </a>
+    </div>
 
     <!-------------------About me---------------------->
 <div id="about">
-    <div class="container">
+    <div id="abouts" class="container">
         <div class="row">
             <div class="about-col1">
                 <a class="discord-icon1" href="https://discord.gg/JdS7stFd" target="_blank">
@@ -176,12 +180,12 @@
 <!-------------------Lets work together---------------->
 <div id="contact">
     <div class="containerss">
-            <img src="portfolio.png" class="logo1">
+            <img data-aos="zoom-in-right" src="portfolio.png" class="logo1">
 
             <div class="cards">
                 <h2 class="work">Message Me</h2><br></br>    
                 <div class="contact-form">
-                <form>
+                <form action="https://formspree.io/f/mleyjkel" method="POST">
                     <span>Your Email</span>
                     <input type="text" name="Your Email" placeholder="Email..." required><br></br>
                     <span>Message</span>
@@ -216,6 +220,8 @@
     <!-------------Note to myself after finishing this project------------------>
     <!----------Always leave a note sa bawat function putek nakakalito pag nagkamali ka------->
     <!-----Hahanapin mopa isa isa e rereview mopa ulit code mo kung nasaan ba yung function na yun---->
-
+    <script>
+        AOS.init({duration:1000});
+      </script>
 </body>
 </html>
